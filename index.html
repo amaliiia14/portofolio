@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portofolio Amalia Ramadhani Putri, Junior Quality Assurance">
   <title>Amalia Ramadhani Putri | Junior QA</title>
+  <script>document.documentElement.classList.add('js')</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="progress" id="progress"></div>
   <header>
     <nav>
-      <a class="brand" href="#home">Amalia Ramadhani Putri</a>
+      <a class="brand" href="#home">amalia</a>
       <ul>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#skills">Skill</a></li>
-        <li><a href="#projects">Portofolio</a></li>
-        <li><a href="#certificates">Sertifikat</a></li>
-        <li><a href="#contact">Kontak</a></li>
+        <li><a href="#about">tentang</a></li>
+        <li><a href="#skills">skill</a></li>
+        <li><a href="#projects">proyek</a></li>
+        <li><a href="#contact">kontak</a></li>
       </ul>
     </nav>
   </header>
@@ -28,211 +29,242 @@
     <section id="home">
       <div class="wrap hero">
         <div>
-          <span class="eyebrow">Tulungagung, Jawa Timur</span>
+          <span class="tag">&gt; hello, world</span>
           <h1>Amalia Ramadhani Putri</h1>
-          <p class="role">Junior Quality Assurance</p>
-          <p class="lead">
-            Saya tertarik pada software testing dan sedang mengembangkan kemampuan
-            dalam manual testing, API testing, SQL, dan test automation.
-          </p>
+          <p class="role"><span id="typed">Junior Quality Assurance</span><span class="caret"></span></p>
+          <p class="lead">Saya tertarik pada software testing dan sedang mengembangkan kemampuan dalam manual testing, API testing, SQL, dan test automation.</p>
           <div class="btns">
-            <a class="btn solid" href="#projects">Lihat portofolio</a>
-            <a class="btn" href="#contact">Hubungi saya</a>
+            <a class="btn solid" href="#projects">lihat proyek</a>
+            <a class="btn" href="#contact">hubungi saya</a>
           </div>
-
         </div>
-        <div class="photo">
-          <img src="img/profile.JPG" alt="Foto Amalia Ramadhani Putri">
-        </div>
+        <pre class="code" aria-hidden="true"><span class="k">const</span> amalia = {
+  role: <span class="s">"Junior QA"</span>,
+  focus: [<span class="s">"manual testing"</span>,
+          <span class="s">"API testing"</span>,
+          <span class="s">"Cypress"</span>],
+  openToWork: <span class="k">true</span>,
+};</pre>
       </div>
+      <a class="scroll-cue" href="#about" aria-label="Gulir ke bawah">scroll ↓</a>
     </section>
 
     <section id="about">
       <div class="wrap about">
-        <div>
-          <span class="eyebrow">Tentang</span>
-          <h2>Tentang saya</h2>
-          <p>
-            Saya lulusan S1 Teknik Informatika Universitas Muhammadiyah Malang (2022–2026)
-            yang berfokus pada software quality assurance.
-          </p>
-          <p>
-            Lewat proyek praktik, saya menyusun test plan, test scenario, dan test case
-            dari requirement dan acceptance criteria, lalu melakukan functional testing,
-            mencatat bug, dan menguji REST API. Saya juga mulai menulis automated test
-            dengan Cypress.
-          </p>
-          <p>
-            Skripsi saya membahas optimasi proses pembayaran dan pencatatan SPP digital
-            di SMK Ngunut dengan pendekatan Business Process Reengineering dan BPMN,
-            termasuk usability testing dan prototype website.
-          </p>
+        <div class="photo">
+          <img src="img/profile.JPG" alt="Foto Amalia Ramadhani Putri" onerror="this.onerror=null;this.src='img/profile.jpg'">
         </div>
-        <div class="info">
-          <div><h3>Pendidikan</h3><p>Universitas Muhammadiyah Malang</p><span>S1 Teknik Informatika, IPK 3.86</span></div>
-          <div><h3>Fokus</h3><p>Software Quality Assurance</p><span>Manual testing, API testing, dasar automation</span></div>
-          <div><h3>Sedang dipelajari</h3><p>Test automation</p><span>JavaScript dan Cypress</span></div>
+        <div>
+          <span class="tag">// tentang</span>
+          <h2>Tentang saya</h2>
+          <p>Saya lulusan S1 Teknik Informatika Universitas Muhammadiyah Malang yang tertarik untuk berkarier di bidang Software Quality Assurance (QA).</p>
+          <p>Saya senang mempelajari cara kerja aplikasi, menguji apakah fitur berjalan sesuai harapan, dan mencatat temuan selama pengujian. Melalui proyek praktik, saya belajar menyusun test scenario dan test case berdasarkan requirement, melakukan functional testing, mendokumentasikan bug, serta menguji REST API menggunakan Postman. Saat ini, saya juga sedang mengembangkan kemampuan test automation menggunakan Cypress.</p>
+          <p>Saya masih terus belajar dan ingin mendapatkan pengalaman langsung tentang bagaimana proses pengujian dilakukan dalam tim QA di dunia kerja.</p>
+          <div class="info">
+            <div><b>Pendidikan</b><span>UMM, S1 Teknik Informatika, IPK 3.86</span></div>
+            <div><b>Fokus Karier</b><span>Software Quality Assurance</span></div>
+            <div><b>Sedang Dipelajari</b><span>JavaScript dan Cypress</span></div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="skills">
-      <div class="wrap">
-        <span class="eyebrow">Skill</span>
-        <h2>Yang saya kerjakan</h2>
-        <div class="skills">
-          <div class="skill">
-            <h3>Manual testing</h3>
-            <p>Test plan, test scenario, test case, bug reporting, dan functional testing berdasarkan acceptance criteria.</p>
-            <small>Test Plan · Test Case · Bug Report · Defect Lifecycle</small>
-          </div>
-          <div class="skill">
-            <h3>API testing</h3>
-            <p>Menguji endpoint REST dengan Postman dan memverifikasi status code, response body, serta error message.</p>
-            <small>Postman (Basic) · REST API (Basic) · Response Validation</small>
-          </div>
-          <div class="skill">
-            <h3>Test automation</h3>
-            <p>Automated test aplikasi web dengan Cypress, memakai Page Object Model, fixtures, assertions, dan intercept.</p>
-            <small>Cypress (Basic) · JavaScript · POM</small>
-          </div>
-          <div class="skill">
-            <h3>Fundamental QA dan tools</h3>
-            <p>Memahami SDLC, STLC, dan Agile, serta tools yang saya pakai dalam proyek.</p>
-            <small>SQL (Basic) · Git / GitHub (Basic) · SelectorHub · ClickUp</small>
-          </div>
+      <div class="wrap skills-wrap">
+        <span class="tag">// skill</span>
+        <h2>Tools yang saya pakai</h2>
+        <div class="logos">
+          <a class="logo" data-name="Postman" title="Postman" tabindex="0"><img src="https://cdn.simpleicons.org/postman" alt="Postman"></a>
+          <a class="logo" data-name="Cypress" title="Cypress" tabindex="0"><img src="https://cdn.simpleicons.org/cypress" alt="Cypress"></a>
+          <a class="logo" data-name="JavaScript" title="JavaScript" tabindex="0"><img src="https://cdn.simpleicons.org/javascript" alt="JavaScript"></a>
+          <a class="logo" data-name="SQL (MySQL)" title="SQL (MySQL)" tabindex="0"><img src="https://cdn.simpleicons.org/mysql" alt="MySQL"></a>
+          <a class="logo" data-name="Git" title="Git" tabindex="0"><img src="https://cdn.simpleicons.org/git" alt="Git"></a>
+          <a class="logo" data-name="GitHub" title="GitHub" tabindex="0"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></a>
+          <a class="logo" data-name="ClickUp" title="ClickUp" tabindex="0"><img src="https://cdn.simpleicons.org/clickup" alt="ClickUp"></a>
+          <a class="logo" data-name="Loom" title="Loom" tabindex="0"><img src="https://cdn.simpleicons.org/loom" alt="Loom"></a>
+          <a class="logo" data-name="Figma" title="Figma" tabindex="0"><img src="https://cdn.simpleicons.org/figma" alt="Figma"></a>
         </div>
-        <p class="soft">Soft skill: manajemen waktu, kerja sama tim, problem solving, komunikasi, attention to detail.</p>
       </div>
     </section>
 
     <section id="projects">
       <div class="wrap">
-        <span class="eyebrow">Portofolio</span>
+        <span class="tag">// proyek</span>
         <h2>Proyek pengujian</h2>
-        <p class="intro">Dokumentasi pengujian saya susun di Google Sheets. Pratinjaunya bisa langsung dilihat dan di-scroll di bawah ini.</p>
 
         <article class="project">
           <div>
-            <span class="num">01 · Manual testing</span>
-            <h3>Practice Software Testing: Toolshop</h3>
-            <ul>
-              <li>Menyusun test plan, 67 test case, dan test scenario dari requirement dan acceptance criteria.</li>
-              <li>Functional testing fitur Sign Up, Login, dan Checkout, termasuk positive dan negative case.</li>
-              <li>Menemukan 7 bug selama pengujian.</li>
-            </ul>
-            <p class="meta">Test Plan · Test Case · Functional Testing</p>
+            <span class="tag" style="margin:0">01 · manual testing</span>
+            <h3>Toolshop Testing</h3>
+            <p>80 test case beserta test plan dan test scenario untuk fitur Register, Login, Product Overview, dan Checkout, termasuk positive dan negative case. Menemukan 7 bug selama pengujian.</p>
+            <p class="stack">Test Plan · Test Case · Functional Testing</p>
+            <div class="actions">
+              <a class="live" href="https://docs.google.com/spreadsheets/d/1aUOEgrdl4p0I0Dfc9bakBeW6zoEDa9-v46vxtcP49ho/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Spreadsheet →</a>
+            </div>
           </div>
-          <div class="frame">
-            <div class="frame-bar"><span>Test case Toolshop</span><a class="ext" style="margin:0" href="https://docs.google.com/spreadsheets/d/1aUOEgrdl4p0I0Dfc9bakBeW6zoEDa9-v46vxtcP49ho/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Buka penuh ↗</a></div>
-            <iframe src="https://docs.google.com/spreadsheets/d/1aUOEgrdl4p0I0Dfc9bakBeW6zoEDa9-v46vxtcP49ho/preview" title="Spreadsheet test case Toolshop" loading="lazy"></iframe>
+          <div class="shot">
+            <span>img/project-toolshop.png</span>
+            <img src="img/toolshop.png" alt="Cuplikan spreadsheet test case Toolshop" loading="lazy" onerror="this.remove()">
           </div>
         </article>
 
         <article class="project">
           <div>
-            <span class="num">02 · Manual dan automation</span>
-            <h3>OrangeHRM</h3>
-            <ul>
-              <li>Menyusun 38 test case dan test scenario untuk fitur Login, Directory, dan Recruitment.</li>
-              <li>Functional testing dan dokumentasi bug dalam bug report.</li>
-              <li>Automated test fitur login dengan Cypress: Page Object Model, fixtures, selectors, assertions, dan intercept.</li>
-            </ul>
-            <p class="meta">Cypress · POM · Test Case</p>
-            <a class="ext" href="https://github.com/amaliiia14" target="_blank" rel="noopener noreferrer">Kode di GitHub ↗</a>
+            <span class="tag" style="margin:0">02 · manual + automation</span>
+            <h3>OrangeHRM Testing</h3>
+            <p>38 test case untuk fitur Login, Directory, dan Recruitment, plus automated test fitur login dengan Cypress memakai Page Object Model, fixtures, selectors, assertions, dan intercept.</p>
+            <p class="stack">Cypress · POM · Test Case</p>
+            <div class="actions">
+              <a class="gh" href="https://github.com/amaliiia14" target="_blank" rel="noopener noreferrer" aria-label="Kode di GitHub"><img src="https://cdn.simpleicons.org/github/ffffff" alt=""></a>
+              <a class="live" href="https://docs.google.com/spreadsheets/d/1FFGcmu3yU_7MQfBS2dc7KmKMXwqbyFBEww4nRLB6onc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Spreadsheet →</a>
+            </div>
           </div>
-          <div class="frame">
-            <div class="frame-bar"><span>Test case OrangeHRM</span><a class="ext" style="margin:0" href="https://docs.google.com/spreadsheets/d/1FFGcmu3yU_7MQfBS2dc7KmKMXwqbyFBEww4nRLB6onc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Buka penuh ↗</a></div>
-            <iframe src="https://docs.google.com/spreadsheets/d/1FFGcmu3yU_7MQfBS2dc7KmKMXwqbyFBEww4nRLB6onc/preview" title="Spreadsheet test case OrangeHRM" loading="lazy"></iframe>
+          <div class="shot">
+            <span>img/project-orangehrm.png</span>
+            <img src="img/orangehrm.png" alt="Cuplikan proyek OrangeHRM" loading="lazy" onerror="this.remove()">
           </div>
         </article>
 
         <article class="project">
           <div>
-            <span class="num">03 · API manual test</span>
+            <span class="tag" style="margin:0">03 · api testing</span>
             <h3>Fake API Platzi</h3>
-            <ul>
-              <li>Menguji REST API dengan Postman menggunakan metode GET, POST, PUT, PATCH, dan DELETE.</li>
-              <li>Memverifikasi status code, response body, dan error message.</li>
-            </ul>
-            <p class="meta">Postman · REST API · JSON</p>
-            <a class="ext" href="https://documenter.getpostman.com/view/58161986/2sBYAysogw" target="_blank" rel="noopener noreferrer">Buka dokumentasi Postman ↗</a>
+            <p>Pengujian REST API dengan Postman menggunakan metode GET, POST, PUT, PATCH, dan DELETE, serta verifikasi status code, response body, dan error message.</p>
+            <p class="stack">Postman · REST API · JSON</p>
+            <div class="actions">
+              <a class="live" href="https://documenter.getpostman.com/view/58161986/2sBYAysogw" target="_blank" rel="noopener noreferrer">Dokumentasi →</a>
+            </div>
           </div>
-          <div class="api" aria-hidden="true">
-            <div><i>GET</i><span>verifikasi 200 dan response body</span></div>
-            <div><i>POST</i><span>verifikasi 201 dan data baru</span></div>
-            <div><i>PUT</i><span>verifikasi update penuh</span></div>
-            <div><i>PATCH</i><span>verifikasi update sebagian</span></div>
-            <div><i>DELETE</i><span>verifikasi data terhapus</span></div>
+          <div class="shot api" aria-hidden="true">
+            <div><i>GET</i>200 OK</div>
+            <div><i>POST</i>201 Created</div>
+            <div><i>PUT</i>update penuh</div>
+            <div><i>PATCH</i>update sebagian</div>
+            <div><i>DELETE</i>data terhapus</div>
           </div>
         </article>
-      </div>
-    </section>
-
-    <section id="certificates">
-      <div class="wrap">
-        <span class="eyebrow">Sertifikat</span>
-        <h2>Pelatihan pendukung</h2>
-        <div class="certs">
-          <article class="cert">
-            <img src="img/sertifikat-qa.jpg" alt="Sertifikat Quality Assurance Bootcamp dari Sanbercode" loading="lazy" onerror="this.remove()">
-            <div>
-              <h3>Quality Assurance Bootcamp</h3>
-              <p class="by">Sanbercode · 2026</p>
-              <p>SDLC, STLC, Agile, test plan, test case, bug reporting, serta UI test automation dengan Cypress dan JavaScript.</p>
-              <a class="ext" href="https://sanbercode.com/sertifikat/generate/f4361c2e-c4e6-4bd3-a616-fd9b5ce3672c" target="_blank" rel="noopener noreferrer">Lihat sertifikat ↗</a>
-            </div>
-          </article>
-          <article class="cert">
-            <img src="img/sertifikat-myskill.jpg" alt="Sertifikat Software Quality Assurance E-learning dari MySkill" loading="lazy" onerror="this.remove()">
-            <div>
-              <h3>Software Quality Assurance E-learning</h3>
-              <p class="by">MySkill · 2026</p>
-              <p>SDLC, STLC, Agile, QA Career Opportunities.</p>
-              <a class="ext" href="https://storage.googleapis.com/myskill-v2-certificates/topic-mGdWfE7lCl73hEKbKvf5/FJqcIbeDPF0EGDCQq5Gi-cirF15NMhBVjh4KB7xwa.pdf" target="_blank" rel="noopener noreferrer">Lihat sertifikat ↗</a>
-            </div>
-          </article>
-        </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="wrap contact">
         <div>
-          <span class="eyebrow">Kontak</span>
+          <span class="tag">// kontak</span>
           <h2>Mari berdiskusi</h2>
           <p>Terbuka untuk posisi Junior QA, magang, dan diskusi seputar testing.</p>
           <ul class="contacts">
-            <li><span>Email</span><a href="mailto:amptr14@gmail.com">amptr14@gmail.com</a></li>
-            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/amalia-ramadhani-putri-851880266/" target="_blank" rel="noopener noreferrer">amalia-ramadhani-putri</a></li>
-            <li><span>GitHub</span><a href="https://github.com/amaliiia14" target="_blank" rel="noopener noreferrer">github.com/amaliiia14</a></li>
+            <li><span>email</span><a href="mailto:amptr14@gmail.com">amptr14@gmail.com</a><button type="button" class="copy" data-copy="amptr14@gmail.com">salin</button></li>
+            <li><span>linkedin</span><a href="https://www.linkedin.com/in/amalia-ramadhani-putri-851880266/" target="_blank" rel="noopener noreferrer">amalia-ramadhani-putri</a></li>
+            <li><span>github</span><a href="https://github.com/amaliiia14" target="_blank" rel="noopener noreferrer">github.com/amaliiia14</a></li>
           </ul>
         </div>
         <form class="form" id="contact-form">
-          <label for="name">Nama</label>
+          <label for="name">nama</label>
           <input type="text" id="name" required>
-          <label for="email">Email</label>
+          <label for="email">email</label>
           <input type="email" id="email" required>
-          <label for="message">Pesan</label>
+          <label for="message">pesan</label>
           <textarea id="message" required></textarea>
-          <button type="submit" class="btn">Kirim lewat email</button>
+          <button type="submit" class="btn solid">kirim lewat email</button>
         </form>
       </div>
     </section>
   </main>
 
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
   <footer><p>© 2026 Amalia Ramadhani Putri</p></footer>
 
   <script>
-    document.getElementById('contact-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var n = document.getElementById('name').value;
-      var em = document.getElementById('email').value;
-      var m = document.getElementById('message').value;
-      window.location.href = 'mailto:amptr14@gmail.com?subject=' +
-        encodeURIComponent('Pesan dari portofolio: ' + n) +
-        '&body=' + encodeURIComponent(m + '\n\nDari: ' + n + ' (' + em + ')');
-    });
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var toastEl = document.getElementById('toast'), toastTimer;
+      function toast(msg) {
+        toastEl.textContent = msg; toastEl.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 2400);
+      }
+
+      // Progress bar scroll
+      var bar = document.getElementById('progress');
+      function onScroll() {
+        var d = document.documentElement, max = d.scrollHeight - d.clientHeight;
+        bar.style.transform = 'scaleX(' + (max > 0 ? d.scrollTop / max : 0) + ')';
+      }
+      window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+      if (!reduce && 'IntersectionObserver' in window) {
+        var groups = [['.hero > *', 120], ['.about > *', 150], ['.contact > *', 150],
+                      ['section .tag', 0], ['section h2', 0], ['.logo', 70], ['.project', 0]];
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (!en.isIntersecting) return;
+            var el = en.target; el.classList.add('in'); io.unobserve(el);
+            setTimeout(function () { el.classList.remove('reveal', 'in'); el.style.transitionDelay = ''; }, 1000 + (el._d || 0));
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        groups.forEach(function (g) {
+          document.querySelectorAll(g[0]).forEach(function (el, i) {
+            if (el.parentElement.closest('.reveal')) return;
+            el._d = i * g[1]; el.style.transitionDelay = el._d + 'ms';
+            el.classList.add('reveal'); io.observe(el);
+          });
+        });
+      }
+
+      var links = document.querySelectorAll('nav ul a');
+      if ('IntersectionObserver' in window) {
+        var so = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (!en.isIntersecting) return;
+            links.forEach(function (l) { l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id); });
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        links.forEach(function (l) { var s = document.querySelector(l.getAttribute('href')); if (s) so.observe(s); });
+      }
+
+      var typed = document.getElementById('typed');
+      if (typed && !reduce) {
+        var words = ['Junior Quality Assurance', 'Manual & API Testing', 'Cypress Automation (Basic)'];
+        var w = 0, i = 0, del = false;
+        (function tick() {
+          var word = words[w]; i += del ? -1 : 1;
+          typed.textContent = word.slice(0, i);
+          var t = del ? 35 : 75;
+          if (!del && i === word.length) { del = true; t = 1800; }
+          else if (del && i === 0) { del = false; w = (w + 1) % words.length; t = 350; }
+          setTimeout(tick, t);
+        })();
+      }
+
+      document.querySelectorAll('.project').forEach(function (c) {
+        c.addEventListener('mousemove', function (e) {
+          var r = c.getBoundingClientRect();
+          c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+          c.style.setProperty('--my', (e.clientY - r.top) + 'px');
+        });
+      });
+
+      document.querySelectorAll('[data-copy]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var v = b.dataset.copy;
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(v).then(function () { toast('Email disalin'); }, function () { toast(v); });
+          } else { toast(v); }
+        });
+      });
+
+      document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var n = document.getElementById('name').value;
+        var em = document.getElementById('email').value;
+        var m = document.getElementById('message').value;
+        toast('Membuka aplikasi email…');
+        window.location.href = 'mailto:amptr14@gmail.com?subject=' +
+          encodeURIComponent('Pesan dari portofolio: ' + n) +
+          '&body=' + encodeURIComponent(m + '\n\nDari: ' + n + ' (' + em + ')');
+      });
+    })();
   </script>
 </body>
 </html>
